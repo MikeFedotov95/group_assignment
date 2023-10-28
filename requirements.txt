@@ -8,3 +8,4 @@ plotly
 geopandas
 scikit-learn
 pillow
+joblib

@@ -8,7 +8,7 @@ import geopandas as gpd
 import plotly.express as px
 import random
 import time
-import pickle
+import joblib
 import sqlite3 
 from sklearn.preprocessing import LabelEncoder
 from PIL import Image
@@ -109,9 +109,8 @@ def load_and_clean_data():
 # ADDED for ML MODEL
 def load_model():
     """Load the serialized model."""
-    with open('rf_model_for_gdp_prediction.pkl', 'rb') as model_file:
-        return pickle.load(model_file)
-
+    loaded_model = joblib.load('rf_model_for_gdp_prediction.joblib')
+    return loaded_model
 
 # Function to generate facts using GPT API
 def generate_facts(country, api_key):

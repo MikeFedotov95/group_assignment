@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import requests  # Import the requests library to make HTTP requests
 import openai
+import geopandas as gpd
 import plotly.express as px
 import random
 import time

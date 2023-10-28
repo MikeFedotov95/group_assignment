@@ -1,0 +1,11 @@
+streamlit as st
+pandas as pd
+matplotlib.pyplot
+seaborn as sns
+requests
+openai
+plotly.express
+random
+time
+pickle
+sqlite3 
